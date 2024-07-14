@@ -252,8 +252,8 @@ body {
 }
 
 .Home_contant p {
-  font-weight:400;
-  padding: 0 10px ;
+  font-weight: 400;
+  padding: 0 10px;
   margin: 20px 0 50px;
 }
 
@@ -264,9 +264,6 @@ body {
 }
 /* .....End Home---------------------  */
 
-
-
-
 /* .....Start Media--------------  */
 
 .Media {
@@ -276,7 +273,7 @@ body {
   bottom: -25px;
   height: 120px;
   flex-wrap: wrap;
-  align-content: space-between
+  align-content: space-between;
 }
 
 /* section click */
@@ -386,10 +383,6 @@ body {
   width: 100%;
 }
 
-
-
-
-
 @media (max-width: 991px) {
   .Home .Home_contant .Media {
     width: 311px;
@@ -397,18 +390,11 @@ body {
   }
 }
 
-
-/* @media (min-width: 991px) {
-  .Home .Home_contant .Media {
-    bottom: -19px;
-  }
-} */
-
- @media (min-width: 1220px) {
+@media (min-width: 1220px) {
   .Home .Home_contant .Media {
     bottom: 100px;
   }
-} 
+}
 
 /* ------------------------------------------------------ */
 
@@ -419,18 +405,6 @@ body {
   padding-bottom: 50px;
   background-color: #334a5a;
 }
-
-/* @media (max-width: 767px) {
-  .Personal {
-    margin-top: 230px;
-  }
-} 
-
-@media (min-width: 768px) {
-  .Personal {
-    margin-top: 180px;
-  }
-}  */
 
 @media (max-width: 992px) {
   .Personal {
@@ -443,7 +417,7 @@ body {
   }
 }
 
-.Personal .Specail_Heading{
+.Personal .Specail_Heading {
   color: #ededed;
 }
 
@@ -458,12 +432,12 @@ body {
   display: flex;
   padding: 20px;
   margin-top: 40px;
-  background-color:#ededed;
+  background-color: #ededed;
 }
 
 .Personal .Personal_contant .info_box i {
   font-size: 35px;
-  color:#413380;
+  color: #413380;
   flex-basis: 60px;
 }
 
@@ -481,7 +455,7 @@ body {
 }
 
 .Personal .Personal_contant .info_box h3 {
-  color:rgb(46, 46, 187);
+  color: rgb(46, 46, 187);
   margin: 0 0 20px;
 }
 .Personal .Personal_contant .info_box p {
@@ -512,23 +486,6 @@ body {
   background-color: #ededed;
 }
 
-/* @media (min-width: 375px){
-  .Services{
-    margin-top: 200px;
-  }
-}
-
-@media (min-width: 768px){
-  .Services{
-    margin-top: 180px;
-  }
-}
-
-@media (min-width: 992px){
-  .Services{
-    margin-top: 180px;
-  }
-} */
 
 .Services .Container .Serv_contant {
   display: grid;
@@ -552,12 +509,12 @@ body {
   margin: 0;
   font-size: 20px;
   font-weight: 700;
-  color:wheat;
+  color: wheat;
 }
-.Services .Container .Serv_contant .Serv_text p{
+.Services .Container .Serv_contant .Serv_text p {
   margin-bottom: 0;
   line-height: 1.6;
-  color:#ededed;
+  color: #ededed;
 }
 
 /* End Services */
@@ -565,11 +522,10 @@ body {
 
 
 /* Start Skills section */
-.Skills{
+.Skills {
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 50px;
-  
 }
 
 .Skills .Specail_Heading {
@@ -588,107 +544,94 @@ body {
   margin-top: 70px;
 }
 
-.Skills  .Skill_contant .Rate_box{
+.Skills .Skill_contant .Rate_box {
   display: flex;
   height: 100px;
   width: 100%;
-  margin-bottom:50px ;
+  margin-bottom: 50px;
   justify-content: space-between;
   align-items: center;
   padding: 25px;
   background-color: #334a5a;
 }
 
-.Skills .Skill_contant .Rate_box .Sub_rate{
+.Skills .Skill_contant .Rate_box .Sub_rate {
   display: flex;
-  background-color:gray;
+  background-color: gray;
   width: 80%;
-
 }
-
 
 .Skills .Skill_contant .Rate_box .Sub_rate .Color,
 .Skills .Skill_contant .Rate_box .Sub_rate .Color_1,
 .Skills .Skill_contant .Rate_box .Sub_rate .Color_2,
-.Skills .Skill_contant .Rate_box .Sub_rate .Color_3{
-  background-color:rgb(21, 197, 21);
+.Skills .Skill_contant .Rate_box .Sub_rate .Color_3 {
+  background-color: rgb(21, 197, 21);
   color: var(--third_color);
   font-weight: 600;
   text-align: center;
   width: 95%;
   font-size: 20px;
 }
-.Skills .Skill_contant .Rate_box .Sub_rate .Color_1{
+.Skills .Skill_contant .Rate_box .Sub_rate .Color_1 {
   width: 90%;
   background-color: #00abf0;
 }
-.Skills .Skill_contant .Rate_box .Sub_rate .Color_2{
+.Skills .Skill_contant .Rate_box .Sub_rate .Color_2 {
   width: 75%;
   background-color: rgb(240, 83, 83);
 }
 
-.Skills .Skill_contant .Rate_box .Sub_rate .Color_3{
+.Skills .Skill_contant .Rate_box .Sub_rate .Color_3 {
   width: 20%;
   background-color: rgb(211, 208, 59);
 }
 
-
-
-
-.Skills .Skill_contant .Rate_box  h3{
+.Skills .Skill_contant .Rate_box h3 {
   font-size: 30px;
   padding-right: 10px;
 }
 
-
-
 /* End Skills section */
 
-
 /* Start Contact Section */
-.Contact{
-  background-color:var(--main_color);
-  
-
+.Contact {
+  background-color: var(--main_color);
 }
 
-.Contact .info{
+.Contact .info {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
 }
-.Contact .info .label{
-  font-size:50px;
+.Contact .info .label {
+  font-size: 50px;
   font-weight: 900;
   letter-spacing: -2px;
   color: var(--second_color);
   margin-bottom: 15px;
-
-
 }
 
-.Contact .info a{
+.Contact .info a {
   text-decoration: none;
   font-weight: 600;
   font-size: 35px;
   color: var(--third_color);
   margin-bottom: 20px;
 }
-.Contact .info a:hover{
+.Contact .info a:hover {
   color: green;
   border-bottom: 3px solid black;
 }
 
-.Contact .info .social{
-  display:flex;
+.Contact .info .social {
+  display: flex;
   justify-content: space-evenly;
   font-size: 25px;
   font-weight: 600;
   color: #081b29;
   margin-top: 40px;
-
 }
-.Contact .info .social i{
+.Contact .info .social i {
   color: var(--second_color);
 }
 
@@ -699,15 +642,10 @@ body {
   }
 }
 
-
-@media (max-width: 797px){
-  .Contact .Specail_Heading + p{
+@media (max-width: 797px) {
+  .Contact .Specail_Heading + p {
     font-size: 16px;
   }
 }
-
-
-
-
 
 /* End Contact Section */
