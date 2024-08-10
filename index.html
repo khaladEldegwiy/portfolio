@@ -1,628 +1,268 @@
-/* root values */
-:root {
-  --main_color: #ededed;
-  --second_color: #00abf0;
-  --third_color: #081b29;
-}
-
-/* Global Rules */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-.Container {
-  padding: 0 10%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.Specail_Heading {
-  font-size: 100px;
-  color: #9e9797;
-  font-weight: 800;
-  margin: 0;
-  text-align: center;
-  letter-spacing: -3px;
-}
-
-.Specail_Heading + p {
-  color: black;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 500;
-  margin: -40px 0;
-}
-
-@media (max-width: 768px) {
-  .Specail_Heading {
-    font-size: 80px;
-  }
-}
-
-@media (max-width: 768px) {
-  .Specail_Heading + p {
-    margin: -25px 0;
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 400px) {
-  .Specail_Heading {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 400px) {
-  .Specail_Heading + p {
-    margin: -25px 0;
-    font-size: 25px;
-  }
-}
-
-@media (min-width: 768px) {
-  .Container {
-    width: 750px;
-  }
-}
-
-/* Meduim */
-@media (min-width: 992px) {
-  .Container {
-    width: 970px;
-  }
-}
-
-/* Large Screen */
-@media (min-width: 1200px) {
-  .Container {
-    width: 1300px;
-  }
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--third_color);
-  color: var(--main_color);
-}
-
-/* Start Header */
-.Header .Container {
-  position: absolute;
-  display: flex;
-  top: 0;
-  left: 0;
-  padding: 20px 10%;
-  width: 100%;
-  background-color: transparent;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-}
-
-.Header .Container .logo {
-  font-size: 25px;
-  font-weight: 600;
-  color: var(--main_color);
-  text-decoration: none;
-}
-
-.Header .Container .navb a {
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-  margin-left: 35px;
-  color: var(--main_color);
-  transition: 0.3s;
-}
-
-@media (max-width: 792px) {
-  .Header .navb {
-    display: none;
-  }
-}
-
-@media (max-width: 1150px) {
-  .Home .Container .Home_contant .Text {
-    width: 389px;
-  }
-}
-
-.Header .navb a:hover,
-.Header .navb a.active {
-  color: var(--second_color);
-}
-
-
-
-.Header .Small_Navb {
-  position: relative;
-}
-
-.Header .Small_Navb .icon {
-  width: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.Header .Small_Navb .icon span {
-  background-color: #ededed;
-  height: 2px;
-  margin-bottom: 5px;
-}
-
-.Header .Small_Navb .icon span:first-child,
-.Header .Small_Navb .icon span:last-child {
-  width: 100%;
-}
-
-.Header .Small_Navb .icon span:nth-child(2) {
-  width: 60%;
-  transition: 0.2s;
-}
-
-.Header .Small_Navb .icon:hover span:nth-child(2) {
-  width: 100%;
-}
-
-.Header .Small_Navb ul {
-  display: none;
-  position: absolute;
-  list-style: none;
-  min-width: 200px;
-  background-color: #9e9797;
-  padding: 0;
-  margin: 0;
-  top: calc(100% + 10px);
-  right: 0;
-  z-index: 1;
-}
-.Header .Small_Navb:hover ul {
-  display: block;
-}
-
-.Header .Small_Navb ul a {
-  text-decoration: none;
-  padding: 15px;
-  color: black;
-  display: block;
-  transition: 0.2s;
-}
-.Header .Small_Navb ul a:hover {
-  padding-left: 25px;
-}
-.Header .Small_Navb ul li:not(:last-child) a {
-  border-bottom: 2px solid #ededed;
-}
-
-.Header .Small_Navb ul::before {
-  content: "";
-  position: absolute;
-  border-style: solid;
-  border-color: transparent transparent #9e9797 transparent;
-  border-width: 10px;
-  right: 5px;
-  top: -20px;
-}
-
-@media only screen and (min-width: 792px) {
-  .Header .Small_Navb {
-    display: none;
-  }
-}
-
-/* ......Start Home */
-.Home {
-  margin-top: 50px;
-  padding-bottom: 60px;
-  padding-top: 60px;
-}
-
-.Home_contant {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-@media (max-width: 991px) {
-  .Home .Home_contant {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.Home .Container .Home_contant .Text {
-  max-width: 600px;
-}
-.Home .Container .Home_contant h1 {
-  font-size: 56px;
-  font-weight: 700;
-}
-.Home .Container .Home_contant h1 span {
-  color: rgb(216, 193, 117);
-}
-
-.Home .Container .Home_contant .Text h2 {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--second_color);
-}
-
-.Home_contant p {
-  font-weight: 400;
-  padding: 0 10px;
-  margin: 20px 0 50px;
-}
-
-.Home .Home_contant .Image img {
-  height: 472px;
-  border: 2px solid var(--main_color);
-  border-radius: 10%;
-}
-/* .....End Home---------------------  */
-
-/* .....Start Media--------------  */
-
-.Media {
-  position: absolute;
-  display: flex;
-  width: 340px;
-  bottom: -25px;
-  height: 120px;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
-
-/* section click */
-
-.click {
-  display: flex;
-  bottom: 40px;
-  width: 100%;
-  height: 50px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.Home .Home_contant .click a {
-  position: relative;
-  display: inline-flex;
-  height: 100%;
-  width: 150px;
-  justify-content: center;
-  align-items: center;
-  color: var(--third_color);
-  background-color: var(--second_color);
-  border: 2px solid var(--second_color);
-  border-radius: 18px;
-  font-size: 19px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-decoration: none;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.Home .Home_contant .click a:nth-child(2) {
-  background-color: transparent;
-  color: var(--second_color);
-}
-
-.Home .Home_contant .click a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  background-color: var(--third_color);
-  transition: 0.5s;
-  z-index: -1;
-}
-
-.Home .Home_contant .click a:nth-child(2):before {
-  background-color: var(--second_color);
-}
-
-.Home .Home_contant .click a:hover {
-  color: var(--second_color);
-}
-
-.Home .Home_contant .click a:hover::before {
-  width: 100%;
-}
-.Home .Home_contant .click a:nth-child(2):hover {
-  color: var(--third_color);
-}
-
-/* Section Icons */
-.icons {
-  display: flex;
-  width: 100%;
-  height: 60px;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-.icons a {
-  position: relative;
-  display: inline-flex;
-  width: 40px;
-  height: 40px;
-  color: var(--second_color);
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  background-color: transparent;
-  border: 2px solid var(--second_color);
-  border-radius: 50%;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.Home .Home_contant .Media .icons a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--second_color);
-  height: 100%;
-  width: 0;
-  transition: 0.5s;
-  z-index: -1;
-}
-
-.Home .Home_contant .Media .icons a:hover {
-  color: var(--third_color);
-}
-
-.Home .Home_contant .Media .icons a:hover::before {
-  width: 100%;
-}
-
-@media (max-width: 991px) {
-  .Home .Home_contant .Media {
-    width: 311px;
-    bottom: -615px;
-  }
-}
-
-@media (min-width: 1220px) {
-  .Home .Home_contant .Media {
-    bottom: 100px;
-  }
-}
-
-/* ------------------------------------------------------ */
-
-/* Start Personal Section */
-.Personal {
-  margin-top: 160px;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  background-color: #334a5a;
-}
-
-@media (max-width: 992px) {
-  .Personal {
-    margin-top: 250px;
-  }
-}
-@media (min-width: 1220px) {
-  .Personal {
-    bottom: 250px;
-  }
-}
-
-.Personal .Specail_Heading {
-  color: #ededed;
-}
-
-.Personal_contant {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  grid-gap: 30px;
-  margin-top: 110px;
-}
-
-.Personal .Personal_contant .info_box {
-  display: flex;
-  padding: 20px;
-  margin-top: 40px;
-  background-color: #ededed;
-}
-
-.Personal .Personal_contant .info_box i {
-  font-size: 35px;
-  color: #413380;
-  flex-basis: 60px;
-}
-
-.Personal .Personal_contant .info_box:hover i {
-  color: greenyellow;
-}
-
-.Personal .Personal_contant .info_box:hover h3,
-.Personal .Personal_contant .info_box:hover i {
-  margin-top: 20px;
-}
-
-.Personal .Personal_contant .info_box .Text_box {
-  flex: 1;
-}
-
-.Personal .Personal_contant .info_box h3 {
-  color: rgb(46, 46, 187);
-  margin: 0 0 20px;
-}
-.Personal .Personal_contant .info_box p {
-  font-weight: 600;
-  font-size: 20px;
-  color: black;
-  line-height: 1.6;
-}
-
-@media (max-width: 767px) {
-  .Personal .Personal_contant .info_box {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-@media (max-width: 767px) {
-  .Personal .Personal_contant {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
-}
-
-/* ------------------------------------------------------- */
-
-/* Start Services */
-.Services {
-  padding-top: 20px;
-  padding-bottom: 50px;
-  background-color: #ededed;
-}
-
-
-.Services .Container .Serv_contant {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 30px;
-  margin-top: 80px;
-}
-
-.Services .Container .Serv_contant .Card {
-  background-color: #758185;
-}
-
-.Services .Container .Serv_contant .Serv_text {
-  padding: 20px;
-}
-
-.Services .Container .Serv_contant img {
-  max-width: 100%;
-}
-.Services .Container .Serv_contant .Serv_text h3 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 700;
-  color: wheat;
-}
-.Services .Container .Serv_contant .Serv_text p {
-  margin-bottom: 0;
-  line-height: 1.6;
-  color: #ededed;
-}
-
-/* End Services */
-
-
-
-/* Start Skills section */
-.Skills {
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 50px;
-}
-
-.Skills .Specail_Heading {
-  font-size: 120px;
-}
-.Skills .Specail_Heading + p {
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: -28px;
-  color: white;
-}
-
-.Skills .Skill_contant {
-  display: flex;
-  flex-direction: column;
-  margin-top: 70px;
-}
-
-.Skills .Skill_contant .Rate_box {
-  display: flex;
-  height: 100px;
-  width: 100%;
-  margin-bottom: 50px;
-  justify-content: center;
-  align-items: center;
-  padding: 25px;
-  background-color: #334a5a;
-}
-
-
-.Skills .Skill_contant .Rate_box h3 {
-  font-size: 30px;
-
-}
-
-/* End Skills section */
-
-
-
-
-
-
-/* Start Contact Section */
-.Contact {
-  background-color: var(--main_color);
-}
-
-.Contact .info {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  text-align: center;
-}
-.Contact .info .label {
-  font-size: 50px;
-  font-weight: 900;
-  letter-spacing: -2px;
-  color: var(--second_color);
-  margin-bottom: 15px;
-}
-
-.Contact .info a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 35px;
-  color: var(--third_color);
-  margin-bottom: 20px;
-}
-.Contact .info a:hover {
-  color: green;
-  border-bottom: 3px solid black;
-}
-
-.Contact .info .social {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 25px;
-  font-weight: 600;
-  color: #081b29;
-  margin-top: 40px;
-}
-.Contact .info .social i {
-  color: var(--second_color);
-}
-
-@media (max-width: 797px) {
-  .Contact .info a,
-  .Contact .info .label {
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 797px) {
-  .Contact .Specail_Heading + p {
-    font-size: 16px;
-  }
-}
-
-/* End Contact Section */
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Main Template Css -->
+    <link rel="stylesheet" href="css/style_2.css" />
+    <!-- Render All element Normally -->
+    <link rel="stylesheet" href="css/normalized.css" />
+    <!-- font icon lib -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- title web -->
+    <title>Personal Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Start Header -->
+    <div class="Header">
+      <div class="Container">
+        <a href="#" class="logo">Khalad.</a>
+        <nav class="navb">
+          <a href="#" class="active">Home</a>
+          <a href="#Personal">Personal</a>
+          <a href="#Services">Services</a>
+          <a href="#Skills">Skills</a>
+          <a href="#Contact">Contact</a>
+        </nav>
+
+      <!-- Media Small Screen Icon -->
+        <div class="Small_Navb">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="#Personal">Personal</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>  
+      <!-- End Header -->
+      
+    <div class="Home">
+      <div class="Container">
+        <div class="Home_contant">
+          <div class="Text">
+            <h1>Hi, I'm <span>Khaled</span></h1>
+            <h2>Frontend Web Developer</h2>
+            <p>
+              “Your website is the center of your digital ecosystem, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.” - Leland Dieno
+            </p>
+            
+          </div>
+          
+          <div class="Image">
+            <img src="img/cartoon.png" alt="">
+          </div> 
+          <!-- Start Media Section -->
+          <div class="Media">
+            <div class="click">
+              <a href="#">Hire Me</a>
+              <a href="https://api.whatsapp.com/send?phone=201062002035&text=Hello%20%2C%20I%20want%20More%20Info%20about%20your%20work%20%F0%9F%98%8A" target="_blank">let's Talk</a>
+              </div>
+              <div class="icons">
+              <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100029285110965" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=201062002035&text=Hello%20%2C%20I%20want%20More%20Info%20about%20your%20work%20%F0%9F%98%8A" target="_blank"><i class="fa-brands fa-whatsapp"></i></i></a>
+              </div> 
+          </div>
+          <!-- End Media Section -->
+      </div>
+    </div> 
+    <!-- End Home Section -->
+
+
+
+
+    <!-- Start Personal Section -->
+    <div class="Personal" id="Personal">
+      <div class="Container">
+        <div class="Specail_Heading">Personal</div>
+        <p>Information</p>
+        <div class="Personal_contant">
+
+          <div class="col">
+            <div class="info_box">
+              <i class="fa-solid fa-pen-nib"></i>
+              <div class="text_box">
+                <h3>Full Name</h3>
+                <p>Khalad Mohamed abdo Eldegiwy</p>
+              </div>
+            </div>
+            
+            <div class="info_box">
+              <i class="fa-solid fa-phone"></i>
+              <div class="text_box">
+                <h3>Phone</h3>
+                <p>01062002035</p>
+              </div>  
+            </div>
+          
+            <div class="info_box">
+              <i class="fa-solid fa-mug-saucer"></i>
+              <div class="text_box">
+                <h3>Freelance</h3>
+                <p>Available</p>
+              </div>  
+            </div>  
+          </div>
+
+          <div class="col">
+            <div class="info_box">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="text_box">
+                <h3> Address</h3>
+                <p>Elmenofia_ Shebin El kom</p>
+              </div>
+            </div>
+            
+            <div class="info_box">
+              <i class="fa-solid fa-user"></i>
+              <div class="text_box">
+                <h3>birthday</h3>
+                <p>10 of April 1996</p>
+              </div>  
+            </div>
+
+            <div class="info_box">
+              <i class="fa-solid fa-user-graduate"></i>
+              <div class="text_box">
+                <h3>Degree</h3>
+                <p>Master </p>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- End Personal Section -->
+
+
+
+
+
+    <!-- Start Services Section -->
+    <div class="Services" id="Services">
+      <div class="Container">
+        <div class="Specail_Heading">Services</div>
+        <p>My Services</p>
+
+        <div class="Serv_contant">
+
+
+          <div class="Card">
+            <img src="img/Web de.jpg" alt="">
+            <div class="Serv_text">
+              <h3>Responsive Website </h3>
+              <p> 
+                Responsive web design (RWD) or responsive design is an approach to web design that aims to make web
+                pages render well on a variety of devices and window
+                or screen sizes from minimum to maximum display size to ensure usability
+                and satisfaction.</p>
+            </div>
+          </div>
+
+
+          <div class="Card">
+            <img src="img/ux-ui-design-word-concepts-5565726.jpg" alt="">
+            <div class="Serv_text">
+              <h3>Ul & UX Design</h3>
+              <p> In digital design, user interface (UI) refers to the interactivity, look, and feel of a product screen or
+                web page, while user experience (UX) covers a user’s overall experience with the product or website.
+                Read on to find out what it takes to design engaging UI,
+                and create a memorable UX.</p>
+            </div>
+          </div>
+
+          <div class="Card">
+            <img src="img/soft2.jpg" alt="">
+            <div class="Serv_text">
+              <h3>Software</h3>
+              <p>Software development is the process programmers use to build computer programs.
+                The process, also known as the Software Development Life Cycle (SDLC),
+                includes several phases that provide a method for building products that
+                meet technical specifications and user requirements.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- End Services Section -->
+
+    <!-- Start Skills Section -->
+    <div class="Skills" id="Skills">
+      <div class="Container">
+        <div class="Specail_Heading">Skills</div>
+        <p>Programming Languges</p>
+
+        <div class="Skill_contant">
+          <div class="Rate_box">
+            <h3>HTML</h3>
+          </div>
+
+          <div class="Rate_box">
+            <h3>Css</h3>
+          </div>
+
+          <div class="Rate_box">
+            <h3>Python</h3>
+          </div>
+
+          <div class="Rate_box">
+            <h3>JavaScript</h3>
+          </div>
+
+					<div class="Rate_box">
+            <h3>WordPress</h3>
+          </div>
+
+					<div class="Rate_box">
+            <h3>PHP</h3>
+          </div>
+
+					<div class="Rate_box">
+            <h3>MySQL</h3>  
+          </div>
+
+        </div>  
+      </div>
+    </div>
+    <!-- End Skills Section -->
+
+    <!-- Start Contact section -->
+    <div class="Contact" id="Contact">
+      <div class="Container">
+        <div class="Specail_Heading">Contact</div>
+        <p>We born to create idea</p>
+        <div class="info">
+          <p class="label">Feel free to drop us a line at :</p>
+          <a href="mailto:KhalidMohaned@gmail?subject=contect" class="link"
+            >KhalidMohaned@gmail</a>
+          <div class="social">
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100029285110965" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=201062002035&text=Hello%20%2C%20I%20want%20More%20Info%20about%20your%20work%20%F0%9F%98%8A" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Contact section -->
+  </body>
+</html>
